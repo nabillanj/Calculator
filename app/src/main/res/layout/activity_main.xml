@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nabilla.task1.MainActivity"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:focusableInTouchMode="false" >
+
+    <EditText
+        android:id="@+id/edt_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/income"
+        android:inputType="number"
+        android:maxLength="15"/>
+    <EditText
+        android:id="@+id/edt_outcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/outcome"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:maxLength="15"/>
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_gravity="center"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_gravity="right"
+        android:src="@drawable/check"
+        android:layout_marginBottom="10dp"/>
+
+    <include layout="@layout/content_main" />
+</LinearLayout>
